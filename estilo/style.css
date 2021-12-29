@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+    --font4: 'Tangerine', cursive;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--font1);
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    font-family: var(--font2);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vh;
+}
+header > p {
+    font-family: var(--font3);
+    padding-bottom: 50px;
+}
+header > p#t {
+    font-family: var(--font3);
+    padding-bottom: 50px;
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+    text-align: center;
+}
+section {
+    font-family: var(--font4);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 4vh;
+}
+section.normal {
+    background-color: ivory;
+    color: rgb(21, 36, 27);
+    box-shadow: inset 1px 1px 12px rgb(209, 188, 149);
+}
+section.normal p {
+    width: 30vh;
+    padding-left: 2vh;
+    background-color: white;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    margin: 2vh;
+    display: inline-block;
+}
+section.normal p:hover {
+    color: rgb(122, 0, 24);
+    text-shadow: 1px 1px 2vh darkgoldenrod;
+}
+section img {
+    display: inline-block;
+    size: 100vh;
+    margin: 5vh 20vh;
+}
+section.imagem {
+    background-color: rgba(32, 28, 25, 0.5);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+    border: 20px solid black;
+    border-image: url('../imagens/decoration/Golden_Ornament_n\ \(4\).png') 80 repeat;
+}
+
+section.imagem p {
+    display: inline-block;
+    width: 400px;
+    background-color: rgba(49, 46, 47, 0.9);
+    padding-left: 4vh;
+    box-shadow: inset 0px 0px 4vh rgba(185, 148, 83, 0.5);
+    border: 20px solid black;
+    border-image: url('../imagens/decoration/Golden_Ornament_n\ \(5\).png') 100 repeat;
+}
+section.imagem p:hover {
+    background-color: black;
+    box-shadow: inset 0px 0px 12vh rgba(255, 207, 125, 0.5);
+    color: white;
+    text-shadow: 1px 1px 2vh yellow;
+}
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+#social {
+    margin: -10vh 1vh;
+    background-image: url('../imagens/8-paper-sheet-png-image.png');
+    background-size: 40%;
+    background-position: 60% center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.7em;
+    font-family: italic;
+}
